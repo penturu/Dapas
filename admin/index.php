@@ -48,6 +48,21 @@ include '../template/header.php';
                             $title = 'Dashboard';
                             include 'dashboard.php';
                             break;
+                        case 'asesmen-show':
+                            $title = 'Data Asesmen';
+                            include '../asesmen/show.php';
+                            break;
+                        case 'asesmen-add':
+                            $title = 'Input Data Asesmen';
+                            include '../asesmen/add.php';
+                            break;
+                        case 'asesmen-edit':
+                            $title = 'Edit Data Asesmen';
+                            include '../asesmen/edit.php';
+                            break;
+                        case 'asesmen-delete':
+                            include '../asesmen/delete.php';
+                            break;
                         case 'pasien-show':
                             $title = 'Data Pasien';
                             include '../pasien/show.php';
