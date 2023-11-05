@@ -1,14 +1,14 @@
 <?php
 include '../connection.php';
 
-if (isset($_GET['kode_asesmen'])) {
-    $kodeAsesmen = $_GET['kode_asesmen'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
-    $query = mysqli_query($con, "SELECT path_asesmen FROM asesmen WHERE kode_asesmen = '$kodeAsesmen'");
+    $query = mysqli_query($con, "SELECT path_asesmen FROM asesmen WHERE id = $id");
     $data = mysqli_fetch_assoc($query);
     $imagePath = $data['path_asesmen'];
 
-    $deleteQuery = mysqli_query($con, "DELETE FROM asesmen WHERE kode_asesmen = '$kodeAsesmen'");
+    $deleteQuery = mysqli_query($con, "DELETE FROM asesmen WHERE id = $id");
 
     if ($deleteQuery) {
 
