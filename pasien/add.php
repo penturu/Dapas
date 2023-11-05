@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
                     <div class="row mb-3">
                         <label for="rekmed" class="col-sm-2 col-form-label">No. Rekam Medis</label>
                         <div class="col-sm-1 mr-none">
-                            <input name="no_rm2" type="number" class="form-control" id="rekmed" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" max="99" required>
+                            <input name="no_rm1" type="number" class="form-control" id="rekmed" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" max="99" required>
                         </div>
                         <p>.</p>
                         <div class="col-sm-1">
@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <p>.</p>
                         <div class="col-sm-1">
-                            <input name="no_rm2" type="number" class="form-control" id="rekmed" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" max="99" required>
+                            <input name="no_rm3" type="number" class="form-control" id="rekmed" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" max="99" required>
                         </div>
                     </div>
                     <div class="row mb-3">
